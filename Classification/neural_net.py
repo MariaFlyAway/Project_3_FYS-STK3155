@@ -1,24 +1,18 @@
-import torch.nn as nn
 import torch
 
-# currently the same as RNN - needs actual implementation
+class NeuralNet(torch.nn.Module):
 
-class NeuralNet(nn.Module):
-    def __init__(self, vocab_size, embed_dim, rnn_hidden_size):
-        super().__init__()
-        self.embedding = nn.Embedding(vocab_size, embed_dim)
-        self.rnn_hidden_size = rnn_hidden_size
-        self.rnn = nn.LSTM(embed_dim, rnn_hidden_size,
-                           batch_first=True)
-        self.fc = nn.Linear(rnn_hidden_size, vocab_size)
+    def __init__(self):
+        super(NeuralNet, self).__init__()
 
-    def forward(self, x, hidden, cell):
-        out = self.embedding(x).unsqueeze(1)
-        out, (hidden, cell) = self.rnn(out, (hidden, cell))
-        out = self.fc(out).reshape(out.size(0) -1)
-        return out, hidden, cell
-    
-    def init_hidden(self, batch_size):
-        hidden = torch.zeros(1, batch_size, self.rnn_hidden_size)
-        cell = torch.zeros(1, batch_size, self.rnn_hidden_size)
-        return hidden, cell
+        self.linear1 = torch.nn.Linear(100, 200)
+        self.activation = torch.nn.ReLU()
+        self.linear2 = torch.nn.Linear(200, 10)
+        self.softmax = torch.nn.Softmax()
+
+    def forward(self, x):
+        x = self.linear1(x)
+        x = self.activation(x)
+        x = self.linear2(x)
+        x = self.softmax(x)
+        return x
