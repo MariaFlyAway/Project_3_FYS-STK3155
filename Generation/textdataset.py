@@ -9,4 +9,4 @@ class TextDataset(Dataset):
     
     def __getitem__(self, idx):
         text_chunk = self.text_chunks[idx]
-        return text_chunk[:-1].long(), text_chunk[1:].long() 
+        return text_chunk[:-1].long(), text_chunk[1:].long()
