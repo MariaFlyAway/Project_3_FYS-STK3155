@@ -5,9 +5,9 @@ class NeuralNet(torch.nn.Module):
     def __init__(self):
         super(NeuralNet, self).__init__()
 
-        self.linear1 = torch.nn.Linear(100, 200)
+        self.linear1 = torch.nn.Linear(1024, 200)
         self.activation = torch.nn.ReLU()
-        self.linear2 = torch.nn.Linear(200, 10)
+        self.linear2 = torch.nn.Linear(200, 5)
         self.softmax = torch.nn.Softmax()
 
     def forward(self, x):

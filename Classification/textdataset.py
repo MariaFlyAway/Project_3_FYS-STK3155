@@ -9,4 +9,4 @@ class TextDataset(Dataset):
         return len(self.data)
     
     def __getitem__(self, idx):
-        return self.data[idx], self.target[idx]
+        return self.data[idx, :], self.target[idx]
