@@ -37,7 +37,7 @@ Contains all files related to implementation of the neural net.
 
 ## License
 
-The data used in this project is licensed under the Project Gutenberg License - see the [LICENSE]: License.txt for details.
+The data used in this project is licensed under the Project Gutenberg License - see the [LICENSE]: (License.txt) for details.
 
 ## Contributors
 - **Jonas Jørgensen Telle**
