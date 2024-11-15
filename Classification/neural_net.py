@@ -6,7 +6,7 @@ class NeuralNet(torch.nn.Module):
         super(NeuralNet, self).__init__()
 
         self.linear1 = torch.nn.Linear(input_dim, 200)
-        self.activation = torch.nn.ReLU()
+        self.activation = torch.nn.Sigmoid()
         self.linear2 = torch.nn.Linear(200, output_dim)
         self.softmax = torch.nn.Softmax(dim=1)
 
