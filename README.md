@@ -25,6 +25,7 @@ Contains all code used in the project
 Class implementation of all gradient descent methods, as well as implementation of class with figures.
 - `neural_net`: class implementation of neural net using `PyTorch`
 - `preprocessing`: notebook with all processing of texts, including embedding with `sentence-transformer`
+- `preprocessing_sentences`: notebook with processing of texts split into sentences with `nltk`, including embedding with `sentence-transformer`
 
 #### `Generation/`
 Contains all files related to implementation of the neural net.
