@@ -33,7 +33,7 @@ Class implementation of all gradient descent methods, as well as implementation 
 - `plotting_results`: notebook for plotting many of the figures found in the report using data from the _Results_-folder.
 - `preprocessing_sentences`: notebook with processing of texts split into sentences with `nltk`, including embedding with `sentence-transformer`
 - `preprocessing`: notebook with all processing of texts, including embedding with `sentence-transformer`.
-- `textdataset_classification`: class implementation of dataset for `PyTorch` interface
+- `textdataset_classification`: class implementation of dataset for `PyTorch` interface.
 
 - **`Data`**:
   - Contains files with datasets for training the classification and clustering models as well as the `torch`-models for classification.
@@ -43,7 +43,9 @@ Class implementation of all gradient descent methods, as well as implementation 
 
 #### `Generation/`
 Contains all files related to implementation of the neural net.
-- `generaation`: notebook with implementation of recurrent neural net for generating new text based on previous works
+- `generation`: notebook with implementation of recurrent neural net for generating new text based on previous works.
+- `rnn`: class implementation of recurrent neural net.
+- `textdataset_generation`: class implementation of dataset for `PyTorch` interface
 
 - **`Models_and_Data`**:
   - Contains saved `torch`-models, a `.txt`-file of the most common English words and the embeddings of the generated text as `.npy`-files.
