@@ -1,7 +1,7 @@
 # Project 3 FYS-STK3155
 
 ## Description
-This project aims to find the best fit for simple polynomials and the Franke function using a neural net and various gradient descent methods, as well as classifying benign and malignant tumors from the Wisconsin breast cancer dataset using a neural net and logistic regression.
+NEEDS SOME FORM OF PROJECT DESCRIPTION HERE
 
 ## Project Structure
 The project is organized into several directories.
@@ -23,19 +23,33 @@ Contains all code used in the project
 
 #### `Classification/`
 Class implementation of all gradient descent methods, as well as implementation of class with figures.
+- `classification_kmeans`: notebook with clustering of data with `KMeans` and `HDBSCAN`using `UMAP`and `PCA`for dimension reduction.
+- `classification_neural_net`: notebook with classification of data using a neural net implemented with `PyTorch`.
+- `clustering_classification`: 
+- `evaluation`: 
+- `kmeans_confusion_matrix`:
 - `neural_net`: class implementation of neural net using `PyTorch`
-- `preprocessing`: notebook with all processing of texts, including embedding with `sentence-transformer`
+- `pca_analysis`: notebook exploring the effects on the accuracy of the neural net when reducing the dimension of the input data with `PCA`.
+- `plotting_results`: notebook for plotting many of the figures found in the report using data from the _Results_-folder.
 - `preprocessing_sentences`: notebook with processing of texts split into sentences with `nltk`, including embedding with `sentence-transformer`
+- `preprocessing`: notebook with all processing of texts, including embedding with `sentence-transformer`.
 - `textdataset_classification`: class implementation of dataset for `PyTorch` interface
+
+- **`Data`**:
+  - Contains files with datasets for training the classification and clustering models as well as the `torch`-models for classification.
+ 
+- **`Results`**:
+  - Accuracy and adjusted rand scores for various runs of classification and clustering.
 
 #### `Generation/`
 Contains all files related to implementation of the neural net.
 - `generaation`: notebook with implementation of recurrent neural net for generating new text based on previous works
 
-- **`Results/`**:
-  - Contains printouts from gridsearch and scores for different hyperparameter combinations
+- **`Models_and_Data`**:
+  - Contains saved `torch`-models, a `.txt`-file of the most common English words and the embeddings of the generated text as `.npy`-files.
  
  #### `Texts/`
+ Contains all texts in `.txt` format from Project Gutenberg, as well as the embeddings of each text for different embedding sizes saved as `.npy`-files.
 
 ## License
 
