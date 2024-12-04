@@ -4,14 +4,17 @@
 The overarching goal of this project is to generate text in the style of famous authors using an RNN, and then to evaluate its performance with classification methods. The project is thus neatly divided into two parts: Generation and discrimination.
 
 ### Discrimination
-The goal here is to create classification algorithms which accurately attributes a given chunk of text to the correct author. The possible authors are the 5 authors in whose style we wish to generate text - Jane Austen, Fyodor Dostoevsky, the authors of the King James Bible (who will be referred to as 'God' throughout the project), Miguel de Cervantes Saavedra, and Snorre Sturluson.
+The goal here is to create classification algorithms which accurately attributes a given chunk of text to the correct author. We have chosen five authors in whose style we wish to generate text - Jane Austen, Fyodor Dostoevsky, the authors of the King James Bible (who will be referred to as 'God' throughout the project), Miguel de Cervantes Saavedra, and Snorre Sturluson.
 
 We test FFNNs and clustering methods (KMeans, HDBSCAN) assisted by dimension reduction methods (UMAP, PCA) on both sentences (which of course have varying lengths) and chunks (which are all the same number of words). The classifiers train on data from one work from each author ('Pride and Prejudice', 'Crime and Punishment', 'The King James Bible', 'Don Quixiote', and 'Heimskringla') provided by the Gutenberg project (see LICENSE). 
 
 We want our classifiers to be able to correctly classify other texts by the same authors, which signalizes a stability and means that they are likely well qualified to assess the performance of our generator. Additionally, we are interested in whether one may reduce the amount of labled data without large performance drops, since labeling is perhaps the most expensive part of supervised learning. We do this with our clustering methods, which make use of a subset of the labels to assist the otherwise unsupervised learning.
 
 ### Generation
-We use a RNN to generate text in the style of our five chosen authors. 
+We use a RNN to generate text in the style of our five chosen authors, testing different temperatures.
+<!---
+(Here is a sample text from BOOK:) 
+-->
 
 ## Project Structure
 The project is organized into several directories.
