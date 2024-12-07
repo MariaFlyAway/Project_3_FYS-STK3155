@@ -11,10 +11,11 @@ We test FFNNs and clustering methods (KMeans, HDBSCAN) assisted by dimension red
 We want our classifiers to be able to correctly classify other texts by the same authors, which signalizes stability and means that they are likely well qualified to assess the performance of our generator. Additionally, we are interested in whether one may reduce the amount of labled data without large performance drops, since labeling is perhaps the most expensive part of supervised learning. We do this with our clustering methods, which make use of a subset of the labels to assist the otherwise unsupervised learning.
 
 ### Generation
-We use a RNN to generate text in the style of our five chosen authors, testing different temperatures.
-<!---
-(Here is a sample text from BOOK) 
--->
+We use a RNN to generate text in the style of our five chosen authors, testing different temperatures. 
+
+Here is a sample text generated with inspiration from the Pentateuch of the Old Testament:
+>10:18 And the LORD spake unto Moses, saying, 15:2 Speak unto the children of Israel, saying, If a man shall have an holy convocation; ye shall not see my wife; and thou shalt teach the manner of workmanship: and the priest shall burn them upon the altar:"
+
 
 ## Project Structure
 The project is organized into several directories.
@@ -37,7 +38,7 @@ Contains all code used in the project
 #### `Classification/`
 Class implementation of all gradient descent methods, as well as implementation of class with figures.
 - `classification_kmeans`: notebook with clustering of data with `KMeans` and `HDBSCAN` using `UMAP` and `PCA` for dimension reduction.
-- `classification_neural_net`: notebook with classification of data using a neural net implemented with `PyTorch`.
+- `classification_neural_net` : notebook with classification of data using a neural net implemented with `PyTorch`.
 - `clustering_classification`: notebook to evaluate the performance and generate design matrices for the clustering methods obtained in `classification_kmeans`.
 - `evaluation`: notebook to evaluate the performance of our RNN text generator, using the best neural net classifier.
 - `kmeans_confusion_matrix`: notebook exploring the effect of the proportion of labeled training data in the `UMAP` reduction on the train dataset performance of `KMeans` and `HDBSCAN`.
