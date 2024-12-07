@@ -14,7 +14,7 @@ We want our classifiers to be able to correctly classify other texts by the same
 We use a RNN to generate text in the style of our five chosen authors, testing different temperatures. 
 
 Here is a sample text generated with inspiration from the Pentateuch of the Old Testament:
->10:18 And the LORD spake unto Moses, saying, 15:2 Speak unto the children of Israel, saying, If a man shall have an holy convocation; ye shall not see my wife; and thou shalt teach the manner of workmanship: and the priest shall burn them upon the altar:"
+>10:18 And the LORD spake unto Moses, saying, 15:2 Speak unto the children of Israel, saying, If a man shall have an holy convocation; ye shall not see my wife; and thou shalt teach the manner of workmanship: and the priest shall burn them upon the altar:
 
 
 ## Project Structure
