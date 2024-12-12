@@ -1,7 +1,7 @@
 # Project 3 FYS-STK3155
 
 ## Description
-The overarching goal of this project is to generate text in the style of famous authors using an RNN, and then to evaluate its performance with classification methods. The project is thus neatly divided into two parts: Generation and discrimination.
+The overarching goal of this project is to generate text in the style of famous authors using an RNN, and then to evaluate its performance with classification methods using neural networks and clustering. The project is thus neatly divided into two parts: Generation and discrimination.
 
 ### Discrimination
 The goal here is to create classification algorithms which accurately attributes a given chunk of text to the correct author. We have chosen five authors in whose style we wish to generate text - Jane Austen, Fyodor Dostoevsky, the authors of the King James Bible (who will be referred to as 'God' throughout the project), Miguel de Cervantes Saavedra, and Snorre Sturluson - and these are the authors we expect our classifiers to be able to distinguish between.
@@ -21,7 +21,7 @@ Here is a sample text generated with inspiration from the Pentateuch of the Old 
 The project is organized into several directories.
 
 ### `Report/`
-Contains the report written for this project in pdf-format.
+Contains the report written for this project in pdf-format as well as any figures produced in connection with the project.
 
 #### `Report Title`
 The report in pdf format
