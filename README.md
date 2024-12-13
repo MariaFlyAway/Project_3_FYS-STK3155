@@ -36,12 +36,12 @@ The report in pdf format
 Contains all code used in the project
 
 #### `Classification/`
-Class implementation of all gradient descent methods, as well as implementation of class with figures.
-- `classification_kmeans`: notebook with clustering of data with `KMeans` and `HDBSCAN` using `UMAP` and `PCA` for dimension reduction.
+Contains the following files related to classification and evaluation:
 - `classification_neural_net` : notebook with classification of data using a neural net implemented with `PyTorch`.
-- `clustering_classification`: notebook to evaluate the performance and generate design matrices for the clustering methods obtained in `classification_kmeans`.
+- `clustering_classification`: notebook with clustering of data with `KMeans` and `HDBSCAN` using `UMAP` and `PCA` for dimension reduction.
+- `clustering_evaluation`: notebook to evaluate the performance and generate design matrices for the clustering methods obtained in `clustering_classification`.
 - `evaluation`: notebook to evaluate the performance of our RNN text generator, using the best neural net classifier.
-- `kmeans_confusion_matrix`: notebook exploring the effect of the proportion of labeled training data in the `UMAP` reduction on the train dataset performance of `KMeans` and `HDBSCAN`.
+- `clustering_reductions`: notebook exploring the effect of the proportion of labeled training data in the `UMAP` reduction on the train dataset performance of `KMeans` and `HDBSCAN`.
 - `neural_net`: class implementation of neural net using `PyTorch`.
 - `pca_analysis`: notebook exploring the effects on the accuracy of the neural net when reducing the dimension of the input data with `PCA`.
 - `plotting_results`: notebook for plotting many of the figures found in the report using data from the _Results_-folder.
@@ -57,6 +57,7 @@ Class implementation of all gradient descent methods, as well as implementation 
 
 #### `Generation/`
 Contains all files related to implementation of the neural net.
+- `evaluation`: notebook with generation evaluation for different temperatures.
 - `generation`: notebook with implementation of recurrent neural net for generating new text based on previous works.
 - `rnn`: class implementation of recurrent neural net.
 - `textdataset_generation`: class implementation of dataset for `PyTorch` interface
