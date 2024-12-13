@@ -23,7 +23,7 @@ The project is organized into several directories.
 ### `Report/`
 Contains the report written for this project in pdf-format as well as any figures produced in connection with the project.
 
-#### `Report Title`
+#### `TeachingMachinestoWriteLikeDostoevskyandRecognizetheWordofGod`
 The report in pdf format
 
 - **`Figures/`**
